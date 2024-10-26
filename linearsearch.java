@@ -15,8 +15,9 @@ public class linearsearch{
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        String name = "batman";
+        
+        System.out.println("enter a word o pharase");
+        String name = sc.nextLine();
         System.out.println("enter the letter to find");
         char target = sc.next().charAt(0);
         System.out.println(search(name ,target));
