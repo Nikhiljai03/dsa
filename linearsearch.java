@@ -1,5 +1,5 @@
-public class linearsearch{
 
+public class linearsearch{
 
 // LINEAR SEARCH IN A SINGLE STRING
 
@@ -57,6 +57,55 @@ public class linearsearch{
     //     return ans;
     // } 
 
+// FINDING THE TARGET IN 2D ARRAY
+
+    // static int[] search(int[][] arr, int target){
+    //     for(int row = 0; row<arr.length;row++){
+    //         for(int col = 0; col < arr[row].length; col++){
+    //             if(arr[row][col] == target){
+    //                 return new int[]{row,col};
+    //             }
+    //         }
+    //     }
+    //     return null;
+    // }
+
+
+//Leet Code : 1295. Find Numbers with Even Number of Digits
+
+//     static int findNumbers(int[] nums){
+//         int count = 0;
+//         for (int num : nums) {
+//             if(even(num)){ //creating a function for even
+//                 count++;
+//             }           
+//         }
+//         return count;
+//     }
+// // FUNCTION TO CHECK WEATHER THE NUMBER IS EVEN OR NOT
+//     static boolean even(int num){
+
+//         int numberofdigits = digits(num);
+//         if(numberofdigits % 2 == 0){
+//             return true;
+//         }
+//         return false;
+
+//     }
+// // COUNTING NUMBER OF DIGITS IN OUR NUMBER
+//     static int digits(int num){
+//         int count = 0;          
+        
+//         while(num > 0){
+//             count++;
+//             num = num /10;
+
+//         }
+
+
+//         return count;
+//     }
+
     public static void main(String[] args) {
 
 // MAIN FUNCTION OF LINEAR SEARCH IN A SINGLE STRING(FINDIND A LEETER)
@@ -70,6 +119,7 @@ public class linearsearch{
 
 
 // MAIN FUNCTION OF LINEAR SEARCH IN AN ARRAY
+
     //    Scanner sc = new Scanner(System.in);
     //    String[] names = {"nikhil","alex","pablo escobar","knight","batman","hesinberg"};
     //    System.out.println("ENTER THE NAME TO FIND");
@@ -86,7 +136,20 @@ public class linearsearch{
     // int[] arr ={22,66,55,444,77,-1,-69,88,99}; 
     // System.out.println(max(arr));
 
+// MAIN FUNCTION OF FINDING TARGET IN 2D ARRAY
+
+    // int[][] arr = {{10,20,30},
+    //              {1,2,3,4,5},
+    //              {100,200,99}};
+    // int target = 4;
+    // int[] ans = search(arr, target);
+    // System.out.println(Arrays.toString(ans));  //Arrays.toString(ans) converts the result array to a readable string format
 
 
+//Leet Code : 1295. MAIN METHOD OF Find Numbers with Even Number of Digits
+
+    // int[] nums = {12,345,2,6,7896};
+    // System.out.println(findNumbers(nums));
+    
     }
 }
