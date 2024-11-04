@@ -71,7 +71,7 @@ public class linearsearch{
     // }
 
 
-//Leet Code : 1295. Find Numbers with Even Number of Digits
+//  Leet Code : 1295. Find Numbers with Even Number of Digits
 
 //     static int findNumbers(int[] nums){
 //         int count = 0;
@@ -106,6 +106,30 @@ public class linearsearch{
 //         return count;
 //     }
 
+
+//  Leet Code : 1672. Richest Customer Wealth
+
+    // public int maximumwealth(int[][] accounts){
+    //     // person = row
+    //     // account = coloumn
+    //     int ans = Integer.MIN_VALUE;
+    //     for(int person = 0; person<accounts.length; person++){
+    //         // when you are starting to move on a new coloumn take the sum for that row
+    //         int sum = 0;
+    //         for(int account = 0; account <accounts[person].length; account++){
+    //             sum += accounts[person][account];
+
+    //         }
+    //         // now we have sum of accounts of person 
+    //         // check with overall ans
+    //         if(sum > ans){
+    //             ans = sum;
+    //         }
+    //     }
+    //     return ans;
+    // }                    
+
+    
     public static void main(String[] args) {
 
 // MAIN FUNCTION OF LINEAR SEARCH IN A SINGLE STRING(FINDIND A LEETER)
@@ -150,6 +174,5 @@ public class linearsearch{
 
     // int[] nums = {12,345,2,6,7896};
     // System.out.println(findNumbers(nums));
-    
     }
 }
