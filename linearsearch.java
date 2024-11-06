@@ -129,7 +129,6 @@ public class linearsearch{
     //     return ans;
     // }                    
 
-    
     public static void main(String[] args) {
 
 // MAIN FUNCTION OF LINEAR SEARCH IN A SINGLE STRING(FINDIND A LEETER)
