@@ -335,6 +335,47 @@ public class binarysearch {
     //     return -1;
     // }
 
+
+// LEETCODE 410 (HARD). Split Array Largest Sum
+
+    public int splitArray(int[] nums, int k) {
+
+         int start = 0; //initially the start is '0'
+         int end = 0;  //initially the end is '0'
+
+         for(int i =0; i < nums.length; i++){
+            start = Math.max(start, nums[i]);  //in the end of the loop this will contain the max item from the array
+            end += nums[i];
+        }
+        
+        // binary search 
+        while(start < end){
+            // tery for the middle for the potential answer
+            int mid = start + (end - start) / 2;
+
+            // calculate how many pieces you cna divide this in with this max sum
+            int sum = 0;
+            int pieces = 1;
+            for(int num : nums){
+                if (sum + num > mid){
+                    // you cannot dd this in sub array make new one
+                    // say you add this num in new subarray thensum = num
+                    sum = num;
+                    pieces++;
+                }else{
+                    sum += num;
+                }
+            }
+            if (pieces > k){
+                start = mid + 1;
+            }else{
+                end = mid;
+            }
+        }
+
+        return end; // here start == end
+    }
+
     public static void main (String[] args){
         
 // MAIN METHOD OF finding the index of the target element in an SORTED array with binarysearch9
@@ -378,11 +419,6 @@ public class binarysearch {
         // int [] arr = {3,5,7,9,10,90,100,130,140,160,170};
         // int target = 10;
         // System.out.println(findingRange(arr, target));
-
-
-
-        int[] arr = {1};
-        System.out.println(findPivot(arr));
         }
     }
 
