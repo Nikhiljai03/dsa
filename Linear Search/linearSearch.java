@@ -162,8 +162,7 @@ public class linearSearch{
     // MAIN FUNCTION OF FINDING TARGET IN 2D ARRAY
     
         // int[][] arr = {{10,20,30},
-        //              {1,2,3,4,5},
-        //              {100,200,99}};
+        //              {1,2,3,4,5}};
         // int target = 4;
         // int[] ans = search(arr, target);
         // System.out.println(Arrays.toString(ans));  //Arrays.toString(ans) converts the result array to a readable string format

@@ -1,0 +1,10 @@
+{
+    "launch": {
+        
+        
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.quickSuggestions": false,
+        "editor.parameterHints.enabled": false
+
+    }
+}
